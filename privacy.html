@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — WaxTrackr</title>
+  <meta name="description" content="Privacy Policy for WaxTrackr" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand-primary: #8f84ff;      /* Color.brandPrimary */
+      --bg: #f2f1ed;                 /* Color.brandBackground */
+      --card-header: #5c5754;        /* Color.cardHeaderColor */
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+      --shadow-strong: rgba(0, 0, 0, 0.12);
+      --accent-warn: #ff6d33;        /* Accent used in app */
+      --radius: 16px;
+      --radius-large: 24px;
+      --maxw: 820px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--brand-primary);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 6px 6px;
+    }
+
+    .title {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--card-header);
+      margin: 0;
+    }
+
+    .version {
+      font-size: 14px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 6px 12px var(--shadow);
+      padding: 20px;
+      margin: 14px 0;
+    }
+
+    .card h2 {
+      font-size: clamp(18px, 2.4vw, 22px);
+      color: var(--card-header);
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      color: var(--card-header);
+      margin: 16px 0 8px;
+      font-weight: 600;
+    }
+
+    .muted { color: var(--muted); }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(143,132,255,0.12);
+      color: var(--brand-primary);
+      font-weight: 600;
+    }
+
+    ul, ol { padding-left: 18px; }
+    li + li { margin-top: 4px; }
+
+    .callout {
+      border-left: 4px solid var(--brand-primary);
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: 0 4px 10px var(--shadow);
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 24px;
+    }
+
+    /* “Glassier” hero card */
+    .hero {
+      background: var(--white);
+      border-radius: var(--radius-large);
+      box-shadow: 0 12px 24px var(--shadow);
+      padding: 22px 20px;
+      margin: 10px 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .hero .logo {
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand-primary) 0%, #b6afff 100%);
+      box-shadow: 0 6px 16px var(--shadow-strong);
+    }
+    .hero .text h1 {
+      margin: 0 0 4px;
+      font-size: clamp(22px, 3vw, 28px);
+      color: var(--card-header);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .hero .text p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 520px) {
+      .page-header { flex-direction: column; align-items: flex-start; }
+      .version { align-self: flex-start; }
+      .hero { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <h1 class="title">Privacy Policy</h1>
+      <div class="version">Effective: <span id="effective-date">[Update this date]</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="text">
+        <h1>WaxTrackr</h1>
+        <p>We respect your privacy. Here’s what we collect, why, and where it’s stored.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1) Who we are</h2>
+      <p>WaxTrackr (“we”, “our”, “us”) is a mobile application that helps you track bike chain care and optionally connect your account to Strava.</p>
+      <p>Contact: <a href="mailto:waxtrackr@srueck.dev">waxtrackr@srueck.dev</a></p>
+    </section>
+
+    <section class="card">
+      <h2>2) What this policy covers</h2>
+      <p>This policy explains what data we collect, how we use it, how we share it, and your choices.</p>
+    </section>
+
+    <section class="card">
+      <h2>3) Data we collect</h2>
+      <h3>A) Data you provide</h3>
+      <ul>
+        <li>App preferences (e.g., unit preference and other settings).</li>
+        <li>Support communications (your email and contents of your message if you contact us).</li>
+      </ul>
+
+      <h3>B) Data from third parties you connect (optional)</h3>
+      <p><span class="badge">Strava</span> If you choose to connect Strava, we receive:</p>
+      <ul>
+        <li>Basic profile information (e.g., first name, last name, username, profile image).</li>
+        <li>Measurement preference (metric/imperial).</li>
+        <li>Other information you explicitly grant via Strava’s permission screens.</li>
+        <li class="muted">We do not receive your Strava password.</li>
+      </ul>
+
+      <h3>C) Device and platform data</h3>
+      <ul>
+        <li>Notifications: Whether you’ve granted permission (used only to determine if reminders can be sent).</li>
+        <li>iCloud/CloudKit: If iCloud is enabled, certain app data syncs via Apple’s CloudKit (see Section 5).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4) How we use your data</h2>
+      <ul>
+        <li>Provide core functionality (manage bikes and wax events, display your Strava profile when connected).</li>
+        <li>Sync your app data across devices using iCloud/CloudKit (see Section 5).</li>
+        <li>Send optional notifications if enabled.</li>
+        <li>Provide support and improve reliability.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5) Where your data is stored and synced</h2>
+      <h3>A) iCloud/CloudKit (sync across devices)</h3>
+      <p>We use Apple’s CloudKit to sync the following SwiftData entities in your private iCloud database:</p>
+      <ul>
+        <li>Bike</li>
+        <li>WaxEvent</li>
+        <li>WaxCatalogItem</li>
+        <li>AppUser</li>
+      </ul>
+      <p class="muted">Syncing occurs when iCloud is available and enabled. If CloudKit is unavailable, the app falls back to a local store and resumes syncing when available. Your private iCloud database is tied to your Apple ID. We do not have direct access to your private CloudKit data.</p>
+
+      <h3>B) On-device only (not synced)</h3>
+      <ul>
+        <li>Preferences and flags (e.g., unit preference, onboarding status, notification request flag).</li>
+        <li>Cached Strava athlete data (for quick loading).</li>
+        <li>Strava tokens (access/refresh/expiry), used only to access Strava’s API.</li>
+        <li>Local notifications are scheduled and delivered on your device.</li>
+      </ul>
+
+    </section>
+
+    <section class="card">
+      <h2>6) Data sharing</h2>
+      <ul>
+        <li>We do not sell your personal data.</li>
+        <li>We do not share personal data with advertisers.</li>
+        <li><strong>Strava:</strong> We receive data only if you connect, and only within the permissions you grant. We do not send your personal data back to Strava beyond what their API requires (e.g., token refresh).</li>
+        <li><strong>Apple (iCloud/CloudKit, notifications):</strong> Apple may process certain data to provide iCloud syncing and system services per Apple’s privacy policies.</li>
+        <li><strong>Legal compliance:</strong> We may disclose information if required by law, regulation, or legal process.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>7) Your choices and controls</h2>
+      <ul>
+        <li><strong>Strava connection:</strong> Connect or disconnect anytime in Settings. Disconnecting stops new data from being fetched and clears cached Strava data in the app.</li>
+        <li><strong>Notifications:</strong> Manage in your device’s system settings.</li>
+        <li><strong>Units and preferences:</strong> Choose in the app (or they sync from Strava if connected).</li>
+        <li><strong>iCloud:</strong> You control whether iCloud is enabled on your device and for this app.</li>
+        <li><strong>Access/Deletion:</strong> Delete the app to remove local data. Manage or delete the app’s iCloud data via iCloud storage settings. For support emails or guidance, contact <a href="mailto:waxtrackr@srueck.dev">waxtrackr@srueck.dev</a>.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>8) Data retention</h2>
+      <ul>
+        <li>Local app data remains on your device as long as you use the app (removed if you delete the app).</li>
+        <li>iCloud/CloudKit data persists in your iCloud account until you delete it.</li>
+        <li>Strava tokens and cached Strava data are removed when you disconnect Strava or delete the app.</li>
+        <li>Support emails are retained as needed for support and records, then deleted or anonymized.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>9) Security</h2>
+      <p>We apply reasonable technical and organizational measures appropriate to the nature of the data we handle. No method of transmission or storage is 100% secure.</p>
+    </section>
+
+    <section class="card">
+      <h2>10) Children’s privacy</h2>
+      <p>WaxTrackr is not directed to children under 13 (or the minimum age in your jurisdiction). We do not knowingly collect personal information from children.</p>
+    </section>
+
+    <section class="card">
+      <h2>11) International users</h2>
+      <p>Your data may be processed in your country and/or where Apple’s iCloud infrastructure operates. By using the app, you consent to such processing.</p>
+    </section>
+
+    <section class="card">
+      <h2>12) Changes to this policy</h2>
+      <p>We may update this policy from time to time. We’ll revise the effective date above and, where appropriate, notify you in‑app or by other reasonable means.</p>
+    </section>
+
+    <section class="card">
+      <h2>13) Contact us</h2>
+      <p>Email: <a href="mailto:waxtrackr@srueck.dev">waxtrackr@srueck.dev</a></p>
+    </section>
+
+    <p class="footer">© <span id="year"></span> WaxTrackr</p>
+  </div>
+
+  <script>
+    // Convenience: auto-fill year if desired
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

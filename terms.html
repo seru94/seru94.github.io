@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Use — WaxTrackr</title>
+  <meta name="description" content="Terms of Use for WaxTrackr" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand-primary: #8f84ff;      /* Color.brandPrimary */
+      --bg: #f2f1ed;                 /* Color.brandBackground */
+      --card-header: #5c5754;        /* Color.cardHeaderColor */
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+      --shadow-strong: rgba(0, 0, 0, 0.12);
+      --radius: 16px;
+      --radius-large: 24px;
+      --maxw: 820px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { color: var(--brand-primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 6px 6px;
+    }
+
+    .title {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--card-header);
+      margin: 0;
+    }
+
+    .version {
+      font-size: 14px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .hero {
+      background: var(--white);
+      border-radius: var(--radius-large);
+      box-shadow: 0 12px 24px var(--shadow);
+      padding: 22px 20px;
+      margin: 10px 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .hero .logo {
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand-primary) 0%, #b6afff 100%);
+      box-shadow: 0 6px 16px var(--shadow-strong);
+      flex: 0 0 auto;
+    }
+    .hero .text h1 {
+      margin: 0 0 4px;
+      font-size: clamp(22px, 3vw, 28px);
+      color: var(--card-header);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .hero .text p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 6px 12px var(--shadow);
+      padding: 20px;
+      margin: 14px 0;
+    }
+
+    .card h2 {
+      font-size: clamp(18px, 2.4vw, 22px);
+      color: var(--card-header);
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      color: var(--card-header);
+      margin: 16px 0 8px;
+      font-weight: 600;
+    }
+
+    ul, ol { padding-left: 18px; }
+    li + li { margin-top: 4px; }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 520px) {
+      .page-header { flex-direction: column; align-items: flex-start; }
+      .version { align-self: flex-start; }
+      .hero { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <h1 class="title">Terms of Use</h1>
+      <div class="version">Updated: <span id="effective-date">[Update this date]</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="text">
+        <h1>WaxTrackr</h1>
+        <p>Please read these terms carefully before using the app.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1) Acceptance of Terms</h2>
+      <p>By downloading, installing, or using WaxTrackr (“the App”), you agree to these Terms of Use (“Terms”). If you do not agree, do not use the App.</p>
+    </section>
+
+    <section class="card">
+      <h2>2) Eligibility</h2>
+      <p>You must be legally capable of entering into a binding agreement in your jurisdiction to use the App. If you are under the age required by your jurisdiction, you may use the App only with the consent of your parent or legal guardian.</p>
+    </section>
+
+    <section class="card">
+      <h2>3) App License and Permitted Use</h2>
+      <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes.</p>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Reverse engineer, decompile, or otherwise attempt to extract the App’s source code except as permitted by law.</li>
+        <li>Use the App in any manner that violates applicable laws or regulations.</li>
+        <li>Interfere with or disrupt the App, servers, or networks connected to the App.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4) Accounts and Third-Party Services (Strava)</h2>
+      <p>The App allows you to optionally connect to your Strava account. If you choose to connect:</p>
+      <ul>
+        <li>You authorize the App to access your Strava data within the scope of permissions you grant.</li>
+        <li>You are responsible for maintaining the security of your Strava account and for activities that occur under your account.</li>
+        <li>Strava is a third-party service governed by its own terms and privacy policy; we are not responsible for Strava’s actions or content.</li>
+      </ul>
+      <p>You can disconnect Strava at any time in the App settings.</p>
+    </section>
+
+    <section class="card">
+      <h2>5) iCloud/CloudKit Sync</h2>
+      <p>When iCloud is enabled on your device, the App may sync certain data to your private iCloud database via Apple’s CloudKit service (e.g., bikes, wax events, catalog entries, and your in-app user record). This data is associated with your Apple ID. We do not have direct access to your private iCloud data.</p>
+      <p>If iCloud is unavailable, the App may operate using a local store and resume syncing when iCloud becomes available again. You can manage iCloud settings on your device.</p>
+    </section>
+
+    <section class="card">
+      <h2>6) Privacy</h2>
+      <p>Your use of the App is also subject to our <a href="privacy.html" rel="noopener">Privacy Policy</a>, which explains what data we collect, how we use it, and where it is stored (including iCloud/CloudKit).</p>
+    </section>
+
+    <section class="card">
+      <h2>7) Intellectual Property</h2>
+      <p>The App and its content (excluding any third-party content and your own data) are protected by intellectual property laws. We reserve all rights not expressly granted to you in these Terms.</p>
+    </section>
+
+    <section class="card">
+      <h2>8) User Content</h2>
+      <p>Content you create or input in the App (e.g., bike names, notes, wax events) remains yours. You grant us a limited license to process this content solely for providing the App’s functionality.</p>
+    </section>
+
+    <section class="card">
+      <h2>9) Third-Party Links and Services</h2>
+      <p>The App may include links to third-party websites or services (such as Strava). We are not responsible for third-party content, policies, or practices. Your use of third-party services is at your own risk and subject to their terms.</p>
+    </section>
+
+    <section class="card">
+      <h2>10) Disclaimers</h2>
+      <p>The App is provided “as is” and “as available” without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, secure, or free of harmful components.</p>
+    </section>
+
+    <section class="card">
+      <h2>11) Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, in no event will we be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or revenues, whether incurred directly or indirectly, or any loss or damage resulting from (a) your use or inability to use the App; (b) any unauthorized access to or use of our servers or your data; or (c) any bugs, viruses, or other harmful content. Our total liability for any claim relating to the App shall not exceed the amount you paid (if any) to use the App in the twelve months preceding the claim.</p>
+    </section>
+
+    <section class="card">
+      <h2>12) Indemnification</h2>
+      <p>You agree to indemnify and hold us harmless from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys’ fees) arising out of or in any way connected with your use of the App or your violation of these Terms.</p>
+    </section>
+
+    <section class="card">
+      <h2>13) Termination</h2>
+      <p>We may suspend or terminate your access to the App at any time for any reason, including if we reasonably believe you have violated these Terms. Upon termination, your right to use the App will cease immediately. You may stop using the App at any time by uninstalling it and, if desired, managing/deleting iCloud data via your device settings.</p>
+    </section>
+
+    <section class="card">
+      <h2>14) Changes to the App and Terms</h2>
+      <p>We may update the App and these Terms from time to time. We will update the “Updated” date above and may provide additional notice where appropriate. Continued use of the App after changes take effect constitutes your acceptance of the updated Terms.</p>
+    </section>
+
+    <section class="card">
+      <h2>15) Governing Law</h2>
+      <p>These Terms are governed by the laws of your country or state of residence to the extent permitted, without regard to its conflict of law principles. Where not permitted, the governing law shall be the law of the jurisdiction in which we are established.</p>
+    </section>
+
+    <section class="card">
+      <h2>16) Contact</h2>
+      <p>If you have questions about these Terms, contact us at <a href="mailto:waxtrackr@srueck.dev">waxtrackr@srueck.dev</a>.</p>
+    </section>
+
+    <p class="footer">© <span id="year"></span> WaxTrackr · <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
