@@ -71,6 +71,26 @@
       white-space: nowrap;
     }
 
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 1px 3px var(--shadow);
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .back-link:hover {
+      text-decoration: none;
+      box-shadow: 0 2px 8px var(--shadow-strong);
+      transform: translateY(-1px);
+    }
+
     .card {
       background: var(--white);
       border-radius: var(--radius);
@@ -167,8 +187,11 @@
 <body>
   <div class="wrap">
     <header class="page-header">
-      <h1 class="title">Privacy Policy</h1>
-      <div class="version">Effective: <span id="effective-date">[Update this date]</span></div>
+      <div>
+        <h1 class="title">Privacy Policy</h1>
+        <div class="version">Effective: <span id="effective-date">[Update this date]</span></div>
+      </div>
+      <a href="index.html" class="back-link">← Back</a>
     </header>
 
     <section class="hero">
