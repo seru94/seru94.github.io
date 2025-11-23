@@ -67,9 +67,9 @@
       height: 40px;
       width: 40px;
       border-radius: 10px;
-      background: linear-gradient(135deg, var(--brand-primary) 0%, #b6afff 100%);
       box-shadow: 0 6px 16px var(--shadow-strong);
       flex: 0 0 auto;
+      object-fit: cover;
     }
 
     .subtitle {
@@ -186,19 +186,23 @@
   <div class="wrap">
     <header class="page-header">
       <h1 class="title">
-        <span class="logo" aria-hidden="true"></span>
+        <img src="WaxTrackr.jpg" alt="WaxTrackr logo" class="logo">
         WaxTrackr
       </h1>
       <p class="subtitle">Bike chain care — simply tracked.</p>
+
     </header>
 
     <section class="hero">
       <h1>Welcome</h1>
       <p>Find our policies and support links below. Tap a card to open the page.</p>
       <div class="cta-row">
-        <a class="cta" href="privacy.html" rel="noopener">Open Privacy Policy</a>
-        <!-- Optional Terms button; remove if not needed -->
-        <a class="cta" href="terms.html" rel="noopener" style="background:#2b2b2b;">Open Terms of Use</a>
+        <!-- Replace href="#" with your App Store URL when ready -->
+        <a class="cta" href="#" rel="noopener" aria-label="Download on the App Store"
+           onclick="alert('App Store link placeholder — replace href with your App Store URL'); return false;">
+          <!-- Simple text badge; replace with official App Store badge image if desired -->
+          <span style="display:inline-block; font-weight:700;">Download on the App Store</span>
+        </a>
       </div>
     </section>
 
